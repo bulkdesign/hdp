@@ -1,0 +1,26 @@
+.testimonials h2 {
+    font: var(--font-headline-5);
+    color: var(--color-turquoise);
+}
+
+.testimonials header {
+    margin-bottom: calc(var(--block-margin) / 2);
+}
+
+.testimonials .testimonial-item {
+    background: var(--color-light-grey);
+    padding: calc(var(--page-padding) * 2);
+    border-radius: 2rem;
+    min-height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials .testimonial-item p {
+    font: var(--font-body);
+}
+
+.testimonials .testimonial-item cite :is(strong) {
+    color: var(--color-purple);
+}

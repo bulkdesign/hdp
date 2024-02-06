@@ -1,0 +1,44 @@
+.page-hero[data-color-scheme="purple"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.page-hero[data-color-scheme="turquoise"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.page-hero[data-color-scheme="light-blue"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.page-hero:is([data-color-scheme|="purple"], [data-color-scheme|="turquoise"], [data-color-scheme|="light-blue"]) :is(.page-hero-image img, .page-hero-video-player :is(iframe, video)) {
+    opacity: 0.3;
+}
+
+.page-hero:is([data-color-scheme|="purple"], [data-color-scheme|="turquoise"], [data-color-scheme|="light-blue"]) :is(h1, h2, h3, h4, h5, h6, p, .eyebrow) {
+    color: var(--color-white);
+}
+
+.page-hero:is([data-color-scheme|="purple"], [data-color-scheme|="turquoise"], [data-color-scheme|="light-blue"]) :is(.primary-button) {
+    background-color: var(--background-color);
+    border-color: var(--background-color);
+}
+
+.page-hero:is([data-color-scheme|="purple"], [data-color-scheme|="turquoise"], [data-color-scheme|="light-blue"]) :is(.secondary-button, .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button) {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.page-hero:is([data-color-scheme|="purple"]) :is(.primary-button:is(:hover, :active, :focus), .secondary-button:is(:hover, :active, :focus), .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button:is(:hover, :active, :focus)) {
+    background: var(--medium-purple-shadow-color);
+}
+
+.page-hero:is([data-color-scheme|="turquoise"]) :is(.primary-button:is(:hover, :active, :focus), .secondary-button:is(:hover, :active, :focus), .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button:is(:hover, :active, :focus)) {
+    background: var(--medium-turquoise-shadow-color);
+}
+
+.page-hero:is([data-color-scheme|="light-blue"]) :is(.primary-button:is(:hover, :active, :focus), .secondary-button:is(:hover, :active, :focus), .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button:is(:hover, :active, :focus)) {
+    background: var(--light-blue-shadow-color);
+}

@@ -1,0 +1,133 @@
+/*
+** Conheça o robô DaVinci Xi
+*/
+.blocks-container .content-with-media:is(.side-by-side-featured) {
+    max-width: 100%;
+    text-align: right;
+    column-gap: 0;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured) .content-with-media-media {
+    height: 100%;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured) .content-with-media-media img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured) .content-with-media-content {
+    margin-right: calc( 50vw - ( var(--wide-width) / 2));
+    padding: 0 0rem 4rem 2rem;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured) .content-with-media-content .content-with-media-buttons {
+    justify-content: end;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured) .content-with-media-content .content-with-media-buttons a.primary-button {
+    background: var(--color-turquoise);
+    border: none;
+    border-radius: 1rem;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured) .content-with-media-content .content-with-media-buttons a.primary-button:is(:hover, :active, :focus) {
+    background: var(--color-dark-turquoise);
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured) h2 {
+    font: var(--font-headline-5);
+    color: var(--color-white);
+}
+
+/*
+** Conheça o robô DaVinci Xi
+*/
+.blocks-container .content-with-media:is(.side-by-side-featured.azul-bebe) .content-with-media-media {
+    height: auto;
+    justify-content: flex-start;
+    margin: 4rem 4rem 0;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.azul-bebe) .content-with-media-media img {
+    height: 20rem;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.azul-bebe) {
+    text-align: left;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.azul-bebe) .content-with-media-content .content-with-media-buttons {
+    justify-content: start;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.azul-bebe) .content-with-media-content .content-with-media-buttons a.primary-button {
+    color: var(--color-black);
+    font-weight: bold;
+    background: var(--color-white);
+    border: none;
+    border-radius: 1rem;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.azul-bebe) .content-with-media-content .content-with-media-buttons a.primary-button:is(:hover, :active, :focus) {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+/*
+** Certificações
+*/
+.blocks-container .content-with-media:is(.side-by-side-featured.certificate) h2 {
+    color: var(--color-turquoise);
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.certificate) .content-with-media-media {
+    height: auto;
+    justify-content: center;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.certificate) .content-with-media-media img {
+    height: 20rem;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.certificate) {
+    text-align: left;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.certificate) .content-with-media-content {
+    margin-left: calc(50vw - (var(--wide-width) / 2));
+    margin-right: 0;
+    padding: 0;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.certificate) .content-with-media-content .content-with-media-buttons {
+    justify-content: start;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.certificate) .content-with-media-content .content-with-media-buttons a.primary-button {
+    color: var(--color-white);
+    font-weight: bold;
+    background: var(--color-turquoise);
+    border: none;
+    border-radius: 1rem;
+}
+
+.blocks-container .content-with-media:is(.side-by-side-featured.certificate) .content-with-media-content .content-with-media-buttons a.primary-button:is(:hover, :active, :focus) {
+    background: var(--color-dark-turquoise);
+}
+
+@media (min-width: 768px) {
+    .blocks-container .content-with-media:is(.side-by-side-featured) .content-with-media-content {
+        margin-right: calc(50vw - (var(--wide-width) / 2));
+        padding: 5rem 0 5rem 5rem;
+    }
+
+    .blocks-container .content-with-media:is(.side-by-side-featured.azul-bebe) .content-with-media-media {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .blocks-container .content-with-media:is(.side-by-side-featured.azul-bebe) .content-with-media-media img {
+        height: 30rem;
+    }
+}

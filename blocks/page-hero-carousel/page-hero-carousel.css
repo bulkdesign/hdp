@@ -1,0 +1,86 @@
+.page-hero-carousel[data-color-scheme="purple"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.page-hero-carousel[data-color-scheme="turquoise"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.page-hero-carousel[data-color-scheme="light-blue"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.page-hero-carousel:is([data-color-scheme|="purple"], [data-color-scheme|="turquoise"], [data-color-scheme|="light-blue"]) :is(.page-hero-carousel-image img, .page-hero-carousel-video-player :is(iframe, video)) {
+    opacity: 0.3;
+}
+
+.page-hero-carousel:is([data-color-scheme|="purple"], [data-color-scheme|="turquoise"], [data-color-scheme|="light-blue"]) :is(h1, h2, h3, h4, h5, h6, p, .eyebrow) {
+    color: var(--color-white);
+}
+
+.page-hero-carousel:is([data-color-scheme|="purple"], [data-color-scheme|="turquoise"], [data-color-scheme|="light-blue"]) :is(.primary-button) {
+    background-color: var(--background-color);
+    border-color: var(--background-color);
+}
+
+.page-hero-carousel:is([data-color-scheme|="purple"], [data-color-scheme|="turquoise"], [data-color-scheme|="light-blue"]) :is(.secondary-button, .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button) {
+    border-color: var(--color-white);
+    color: var(--color-white);
+}
+
+.page-hero-carousel:is([data-color-scheme|="purple"]) :is(.primary-button:is(:hover, :active, :focus), .secondary-button:is(:hover, :active, :focus), .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button:is(:hover, :active, :focus)) {
+    background: var(--medium-purple-shadow-color);
+}
+
+.page-hero-carousel:is([data-color-scheme|="turquoise"]) :is(.primary-button:is(:hover, :active, :focus), .secondary-button:is(:hover, :active, :focus), .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button:is(:hover, :active, :focus)) {
+    background: var(--medium-turquoise-shadow-color);
+}
+
+.page-hero-carousel:is([data-color-scheme|="light-blue"]) :is(.primary-button:is(:hover, :active, :focus), .secondary-button:is(:hover, :active, :focus), .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button:is(:hover, :active, :focus)) {
+    background: var(--light-blue-shadow-color);
+}
+
+.page-hero-carousel h1 {
+    font: var(--font-headline-3);
+}
+
+.page-hero-carousel-slide {
+    padding: calc(var(--block-margin) * 2) 0;
+}
+
+.page-hero-carousel-wrapper {
+    width: var(--wide-width);
+}
+
+.page-hero-carousel-inner {
+    padding: 0;
+}
+
+.page-hero-carousel img {
+    object-position: center 20%;
+}
+
+.page-hero-carousel-navigation {
+    display: none;
+}
+
+:is(.page-hero-carousel-navigation-prev, .page-hero-carousel-navigation-next) svg {
+    width: 3.8rem;
+}
+
+:is(.page-hero-carousel-navigation-prev, .page-hero-carousel-navigation-next) svg * {
+    stroke: currentColor;
+}
+
+:is(.page-hero-carousel-navigation-prev, .page-hero-carousel-navigation-next) svg:is(:active, :focus, :hover) * {
+    stroke: currentColor;
+}
+
+@media (min-width: 768px) {
+    .page-hero-carousel-navigation {
+        display: block;
+    }
+}

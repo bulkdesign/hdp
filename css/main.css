@@ -1,0 +1,103 @@
+:root{
+    /* CONFIGURABLE SETTINGS */
+        /* COLORS */
+        --color-white: #FFFFFF;
+        --color-light-grey: #ececec;
+        --color-grey: #586768;
+        --color-black: #000000;
+        --color-purple: #93327a;
+        --color-dark-purple: #70265E;
+        --color-turquoise: #398e8a;
+        --color-dark-turquoise: #2B6B68;
+        --color-light-blue: #0ab9e8;
+        --color-medium-blue: #067B9C;
+
+        /* BACKGROUND */
+        --medium-purple-color: var(--color-purple);
+        --medium-purple-shadow-color: var(--color-dark-purple);
+
+        --medium-turquoise-color: var(--color-turquoise);
+        --medium-turquoise-shadow-color: var(--color-dark-turquoise);
+
+        --light-blue-color: var(--color-light-blue);
+        --light-blue-shadow-color: var(--color-medium-blue);
+
+        /* COLOR SCHEMES */
+        [data-color-scheme|="purple"] {
+            --background-color: var(--medium-purple-color);
+            --background-shadow: var(--medium-purple-shadow-color);
+        }
+
+        [data-color-scheme|="purple-shadow"] {
+            --background-color: var(--medium-purple-shadow-color);
+        }
+
+        [data-color-scheme|="turquoise"] {
+            --background-color: var(--medium-turquoise-color);
+            --background-shadow: var(--medium-turquoise-shadow-color);
+        }
+
+        [data-color-scheme|="turquoise-shadow"] {
+            --background-color: var(--medium-turquoise-shadow-color);
+        }
+
+        [data-color-scheme|="light-blue"] {
+            --background-color: var(--light-blue-color);
+            --background-shadow: var(--light-blue-shadow-color);
+        }
+
+        [data-color-scheme|="light-blue-shadow"] {
+            --background-color: var(--light-blue-shadow-color);
+        }
+
+        /* TEXT */
+            /* PRIMARY FONT */
+
+            /* SECONDARY FONT */
+
+            /* FONT SIZES */
+
+            /* LIGHT BACKGROUND COLORS */
+
+            /* DARK BACKGROUND COLORS */
+
+        /* PRIMARY BUTTON */
+            /* STYLE */
+            :is(.primary-button, .secondary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button) {
+                border-radius: 1rem;
+            }
+
+            /* LIGHT BACKGROUND COLORS */
+
+            /* DARK BACKGROUND COLORS */
+
+        /* SECONDARY BUTTON */
+            /* STYLE */
+
+            /* LIGHT BACKGROUND COLORS */
+
+            /* DARK BACKGROUND COLORS */
+
+        /* FORMS */
+
+        /* EYEBROW */
+
+        /* MARGINS */
+
+        /* MISCELANEOUS */
+
+}
+
+.blocks-container {
+    margin: 0 auto;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.blocks-container > .alignfull {
+    max-width: 100%;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.home main {
+    margin-top: -9rem;
+}

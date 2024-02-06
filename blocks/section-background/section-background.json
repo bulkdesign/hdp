@@ -1,0 +1,58 @@
+{
+    "key": "group_645024bf5dff6",
+    "title": "Block: Section Background",
+    "fields": [
+        {
+            "key": "field_645024bf76732",
+            "label": "Color Scheme",
+            "name": "color_scheme",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Branco",
+                "medium": "Cinza",
+                "dark": "Preto",
+                "purple": "Roxo",
+                "purple-shadow": "Roxo Escuro",
+                "turquoise": "Turquesa",
+                "turquoise-shadow": "Turquesa Escuro",
+                "light-blue": "Azul Bebê",
+                "light-blue-shadow": "Azul Bebê Escuro"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/section-background"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1702798698
+}

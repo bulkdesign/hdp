@@ -1,0 +1,9 @@
+.cards-with-hover-content-item-content-inner p,
+.cards-with-hover-content-item-content-inner h1,
+.cards-with-hover-content-item-content-inner h2,
+.cards-with-hover-content-item-content-inner h3,
+.cards-with-hover-content-item-content-inner h4,
+.cards-with-hover-content-item-content-inner h5,
+.cards-with-hover-content-item-content-inner h6 {
+    color: var(--color-white);
+}

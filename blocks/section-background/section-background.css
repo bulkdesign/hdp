@@ -1,0 +1,33 @@
+.section-background[data-color-scheme="purple"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.section-background[data-color-scheme="purple-shadow"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.section-background[data-color-scheme="turquoise"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.section-background[data-color-scheme="turquoise-shadow"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.section-background[data-color-scheme="light-blue"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.section-background[data-color-scheme="light-blue-shadow"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.section-background:has(.side-by-side-featured) {
+    padding: 0;
+}

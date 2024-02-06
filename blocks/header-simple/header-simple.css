@@ -1,0 +1,29 @@
+.header-simple[data-color-scheme="purple"],
+.header-simple[data-color-scheme="purple-shadow"],
+.header-simple[data-color-scheme="turquoise"],
+.header-simple[data-color-scheme="turquoise-shadow"],
+.header-simple[data-color-scheme="light-blue"],
+.header-simple[data-color-scheme="light-blue-shadow"] {
+    background: var(--background-color);
+    color: var(--color-white);
+}
+
+.home .header-simple:not(.scrolled) {
+    background: transparent;
+    position: relative;
+    transition: 0.3s all ease;
+}
+
+.header-simple:is(.scrolled) {
+    transition: 0.3s all ease;
+    top: 0 !important;
+}
+
+.header-simple .logo :is(img, svg) {
+    max-width: 12rem;
+    max-height: 5rem;
+}
+
+.header-simple a {
+    color: var(--color-white);
+}
