@@ -5,49 +5,32 @@
         --color-light-grey: #ececec;
         --color-grey: #586768;
         --color-black: #000000;
-        --color-purple: #93327a;
-        --color-dark-purple: #70265E;
-        --color-turquoise: #398e8a;
-        --color-dark-turquoise: #2B6B68;
-        --color-light-blue: #0ab9e8;
-        --color-medium-blue: #067B9C;
+        --color-light-blue: #00ACEE;
+        --color-medium-blue: #106FC6;
+        --color-dark-blue: #0D579C;
 
         /* BACKGROUND */
-        --medium-purple-color: var(--color-purple);
-        --medium-purple-shadow-color: var(--color-dark-purple);
-
-        --medium-turquoise-color: var(--color-turquoise);
-        --medium-turquoise-shadow-color: var(--color-dark-turquoise);
-
         --light-blue-color: var(--color-light-blue);
-        --light-blue-shadow-color: var(--color-medium-blue);
+        --light-blue-shadow-color: #0073A1;
+
+        --medium-blue-color: var(--color-medium-blue);
+        --medium-blue-shadow-color: var(--color-dark-blue);
+
+        --dark-blue-color: var(--color-dark-blue);
 
         /* COLOR SCHEMES */
-        [data-color-scheme|="purple"] {
-            --background-color: var(--medium-purple-color);
-            --background-shadow: var(--medium-purple-shadow-color);
-        }
-
-        [data-color-scheme|="purple-shadow"] {
-            --background-color: var(--medium-purple-shadow-color);
-        }
-
-        [data-color-scheme|="turquoise"] {
-            --background-color: var(--medium-turquoise-color);
-            --background-shadow: var(--medium-turquoise-shadow-color);
-        }
-
-        [data-color-scheme|="turquoise-shadow"] {
-            --background-color: var(--medium-turquoise-shadow-color);
-        }
-
         [data-color-scheme|="light-blue"] {
             --background-color: var(--light-blue-color);
             --background-shadow: var(--light-blue-shadow-color);
         }
 
-        [data-color-scheme|="light-blue-shadow"] {
-            --background-color: var(--light-blue-shadow-color);
+        [data-color-scheme|="medium-blue"] {
+            --background-color: var(--medium-blue-color);
+            --background-shadow: var(--medium-blue-shadow-color);
+        }
+
+        [data-color-scheme|="dark-blue"] {
+            --background-color: var(--dark-blue-color);
         }
 
         /* TEXT */
