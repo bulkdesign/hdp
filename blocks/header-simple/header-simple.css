@@ -1,9 +1,6 @@
-.header-simple[data-color-scheme="purple"],
-.header-simple[data-color-scheme="purple-shadow"],
-.header-simple[data-color-scheme="turquoise"],
-.header-simple[data-color-scheme="turquoise-shadow"],
 .header-simple[data-color-scheme="light-blue"],
-.header-simple[data-color-scheme="light-blue-shadow"] {
+.header-simple[data-color-scheme="medium-blue"],
+.header-simple[data-color-scheme="dark-blue"] {
     background: var(--background-color);
     color: var(--color-white);
 }

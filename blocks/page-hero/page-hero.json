@@ -328,9 +328,9 @@
                 "light": "Branco",
                 "medium": "Cinza",
                 "dark": "Preto",
-                "purple": "Roxo",
-                "turquoise": "Turquesa",
-                "light-blue": "Azul Bebê"
+                "light-blue": "Azul Claro",
+                "medium-blue": "Azul Médio",
+                "dark-blue": "Azul Escuro"
             },
             "default_value": false,
             "return_format": "value",
