@@ -11,24 +11,6 @@
     color: var(--color-white);
 }
 
-.page-hero-carousel:is([data-color-scheme|="light-blue"], [data-color-scheme|="medium-blue"], [data-color-scheme|="dark-blue"]) :is(.primary-button) {
-    background-color: var(--background-color);
-    border-color: var(--background-color);
-}
-
-.page-hero-carousel:is([data-color-scheme|="light-blue"], [data-color-scheme|="medium-blue"], [data-color-scheme|="dark-blue"]) :is(.primary-button, .secondary-button, .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button) {
-    border-color: var(--color-white);
-    color: var(--color-white);
-}
-
-.page-hero-carousel:is([data-color-scheme|="light-blue"]) :is(.primary-button:is(:hover, :active, :focus), .secondary-button:is(:hover, :active, :focus), .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button:is(:hover, :active, :focus)) {
-    background: var(--medium-blue-shadow-color);
-}
-
-.page-hero-carousel:is([data-color-scheme|="medium-blue"]) :is(.primary-button:is(:hover, :active, :focus), .secondary-button:is(:hover, :active, :focus), .wp-block-button.is-style-outline > .wp-block-button__link.wp-element-button:is(:hover, :active, :focus)) {
-    background: var(--dark-blue-color);
-}
-
 .page-hero-carousel h1 {
     font: var(--font-headline-3);
 }
