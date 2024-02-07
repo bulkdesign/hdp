@@ -9,46 +9,10 @@
 
 <div <?php theme_block_attributes( $block, 'top-bar' ); ?>>
     <div class="top-bar-inner">
-        <?php if( get_field( 'waiting_time' ) ): ?>
-        <ul class="top-bar-content">
-            
-                <li>
-                    <p>Tempo de Espera:</p>
-                    <p>PA Pediátrico é de <strong>3 horas</strong></p>
-                </li>
-
-                <!-- <li>
-                    <?php 
-                        //$context = stream_context_create(array('http' => array('header'=>'Connection: close\r\n')));
-                        //$jsondata = file_get_contents("http://www2.hnsg.org.br/app/api/papediatrico", false, $context);
-                        //$array = json_decode($jsondata);
-                    ?>
-
-                    <p>
-                        PA Pediátrico é de
-                        <strong>
-                            <?php		 
-                                //if($array[0]->HR != "00h") : 
-                                //    echo $array[0]->HR; 
-                                //endif;
-                                //    echo $array[0]->MI; 
-                            ?>	 	
-                        </strong>
-                        
-                        | PA Adulto é de
-                        
-                        <strong>
-                            <?php 
-                                //if($array[0]->HR_ADULTO != "00h") : 
-                                //    echo $array[0]->HR_ADULTO; 
-                                //endif;
-                                //    echo $array[0]->MI_ADULTO; 
-                            ?> 	
-                        </strong>
-                    </p>
-                </li> -->
-
-        </ul>
+        <?php if( get_field( 'text' ) ): ?>
+        <div class="top-bar-content">
+            <p><?php the_field( 'text' ); ?></p>
+        </div>
         <?php endif; ?>
 
         <?php if( have_rows( 'social_media' ) ): ?>

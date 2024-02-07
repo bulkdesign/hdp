@@ -3,11 +3,11 @@
     "title": "Top Bar",
     "fields": [
         {
-            "key": "field_6596d6f005901",
-            "label": "Tempo de Espera",
-            "name": "waiting_time",
+            "key": "field_65c38e8a70959",
+            "label": "Top Bar Text",
+            "name": "text",
             "aria-label": "",
-            "type": "true_false",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,11 +16,11 @@
                 "class": "",
                 "id": ""
             },
-            "message": "",
-            "default_value": 0,
-            "ui_on_text": "",
-            "ui_off_text": "",
-            "ui": 1
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
         },
         {
             "key": "field_659819acfb3cc",
@@ -108,5 +108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1704467051
+    "modified": 1707315514
 }
