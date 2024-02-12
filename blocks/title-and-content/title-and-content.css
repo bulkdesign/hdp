@@ -1,0 +1,12 @@
+.title-and-content :is(h1, h2, h3, h4, h5, h6, p) {
+    color: var(--color-white);
+}
+
+.title-and-content h2 {
+    font: var(--font-headline-3);
+    line-height: 100%;
+}
+
+.title-and-content img {
+    border-radius: var(--element-border-radius);
+}
