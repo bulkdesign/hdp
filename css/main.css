@@ -57,6 +57,7 @@
                 color: var(--color-white);
                 background-color: var(--color-medium-blue);
                 border-color: var(--color-medium-blue);
+                text-align: center;
             }
 
             :is(.primary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button):is(:active, :hover, :focus) {
