@@ -5,8 +5,24 @@
     color: var(--color-white);
 }
 
-.home .header-simple:not(.scrolled) {
+.header-simple:not(.scrolled):is(.menu-open), .header-simple:is(.scrolled, .menu-open) {
+    background: var(--color-medium-blue);
+}
+
+.header-simple .header-simple-menu-toggle .menu-bar {
+    background-color: var(--color-white);
+}
+
+.header-simple:not(.menu-open, .scrolled) {
     background: transparent;
+}
+
+.header-simple:is(.search-open) .header-simple-inner-mobile-wrapper a img {
+    transition: 0.3s ease-in-out all;
+    opacity: 0;
+}
+
+.home .header-simple:not(.scrolled) {
     position: relative;
     transition: 0.3s all ease;
     padding-top: 1rem;
@@ -30,6 +46,10 @@
     color: var(--color-light-blue);
 }
 
+body .header-simple .header-simple-search-form input[type="search"] {
+    border-radius: var(--element-border-radius);
+}
+
 .header-simple .featured-menu li:last-child a {
     background-color: var(--color-light-blue);
     border-color: var(--color-light-blue);
@@ -50,4 +70,10 @@
     margin: 0.1rem 0.5rem;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+}
+
+@media (min-width: 992px) {
+    .header-simple.search-open .header-simple-search-form {
+        max-width: var(--wide-width);
+    }
 }
