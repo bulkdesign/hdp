@@ -1,0 +1,22 @@
+.section-background > .blocks-container > * {
+    max-width: var(--wide-width);
+}
+
+.section-background h2.wp-block-heading {
+    font: var(--font-headline-3);
+}
+
+.section-background h3.wp-block-heading {
+    font: var(--font-headline-4);
+    margin-bottom: 0;
+}
+
+.section-background h4.wp-block-heading {
+    font: var(--font-headline-6);
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.section-background .wp-block-buttons {
+    margin-top: calc(var(--block-margin) / 2);
+}
