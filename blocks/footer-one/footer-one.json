@@ -45,12 +45,9 @@
                 "light": "Branco",
                 "medium": "Cinza",
                 "dark": "Preto",
-                "purple": "Roxo",
-                "purple-shadow": "Roxo Escuro",
-                "turquoise": "Turquesa",
-                "turquoise-shadow": "Turquesa Escuro",
-                "light-blue": "Azul Bebê",
-                "light-blue-shadow": "Azul Bebê Escuro"
+                "light-blue": "Azul Claro",
+                "medium-blue": "Azul Médio",
+                "dark-blue": "Azul Escuro"
             },
             "default_value": false,
             "return_format": "value",
@@ -313,5 +310,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1703975311
+    "modified": 1707711522
 }
