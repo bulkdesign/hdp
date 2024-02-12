@@ -55,6 +55,7 @@ function child_theme_allowed_blocks() {
         'template-content',
         'testimonials',
         'title-and-content',
+        'photos-carousel',
         'top-bar',
         'search'
     );
