@@ -1,0 +1,7 @@
+.photos-carousel h2 {
+    font: var(--font-headline-3);
+}
+
+.photos-carousel img {
+    border-radius: var(--element-border-radius);
+}
