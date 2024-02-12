@@ -12,12 +12,6 @@
     align-items: start;
 }
 
-.latest-news>* {
-    width: var(--wide-width);
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .latest-news h2 {
     font: var(--font-headline-3);
 }
