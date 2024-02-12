@@ -4,7 +4,7 @@
 
 .footer-one-column h2 {
     font: var(--font-headline-8);
-    color: var(--color-purple);
+    color: var(--color-white);
 }
 
 .footer-one-column-container {
@@ -12,13 +12,13 @@
 }
 
 .footer-one-column nav a {
-    color: var(--color-black);
+    color: var(--color-white);
     text-decoration: none;
     font: var(--font-body-small);
 }
 
 .footer-one-column nav a:is(:active, :hover, :focus) {
-    color: var(--color-purple);
+    color: var(--color-light-blue);
 }
 
 .footer-one-column ul li {
@@ -26,27 +26,42 @@
 }
 
 .footer-one-column.footer-one-social-media ul {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.footer-one-column.footer-one-social-media ul li a {
+    font: var(--font-body-small);
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.footer-one-column.footer-one-social-media ul li a :is(svg, img) {
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer-one-column.footer-one-social-media ul li a:is(:hover, :active, :focus) {
+    color: var(--color-light-blue);
 }
 
 .footer-one-column.footer-one-social-media ul li a > svg * {
-    fill: var(--color-grey);
+    fill: var(--color-white);
 }
 
 .footer-one-column.footer-one-social-media ul li a:is(:hover, :active, :focus) > svg * {
-    fill: var(--color-purple);
+    fill: var(--color-light-blue);
 }
 
 @media (min-width: 768px) {
     .footer-one-column-container {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
 
 @media (min-width: 1200px) {
     .footer-one-column-container {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
