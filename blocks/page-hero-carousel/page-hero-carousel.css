@@ -47,6 +47,16 @@
     stroke: currentColor;
 }
 
+@media (max-width: 767px) {
+    .page-hero-carousel .eyebrow.page-hero-carousel-eyebrow {
+        font: var(--font-body-xsmall);
+    }
+
+    .page-hero-carousel-slide {
+        padding: calc(var(--block-margin) * 3) 0 calc(var(--block-margin) * 2) 0;
+    }
+}
+
 @media (min-width: 768px) {
     .page-hero-carousel-navigation {
         display: block;
