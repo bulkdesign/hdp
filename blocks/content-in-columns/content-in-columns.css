@@ -1,0 +1,49 @@
+.content-in-columns:is(.especialidades-home) {
+    background-color: var(--color-white);
+}
+
+.content-in-columns:is(.especialidades-home) h2 {
+    font: var(--font-headline-3);
+}
+
+.content-in-columns:is(.especialidades-home) h3 {
+    font: var(--font-headline-7);
+}
+
+.content-in-columns:is(.especialidades-home) .content-in-columns-details-image img {
+    border-radius: var(--element-border-radius) var(--element-border-radius) 0 0;
+}
+
+.content-in-columns:is(.especialidades-home)[data-color-scheme="light-blue"] .content-in-columns-details-item {
+    background-color: var(--color-light-blue);
+    border-radius: var(--element-border-radius);
+}
+
+.content-in-columns:is(.especialidades-home) .content-in-columns-details-item :is(h3, p) {
+    padding: 0 calc(var(--page-padding) * 2) 0 calc(var(--page-padding) * 2);
+}
+
+.content-in-columns:is(.especialidades-home)[data-color-scheme="light-blue"] .content-in-columns-details-item :is(h3) {
+    font: var(--font-headline-5);
+    color: var(--color-white);
+    margin: 0;
+}
+
+.content-in-columns:is(.especialidades-home)[data-color-scheme="light-blue"] .content-in-columns-details-item :is(p) {
+    color: var(--color-white);
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.content-in-columns:is(.especialidades-home) .content-in-columns-details-item :is(.content-in-columns-details-buttons) {
+    padding: calc(var(--page-padding) * 2);
+}
+
+.content-in-columns:is(.especialidades-home) .content-in-columns-details {
+    margin: calc(var(--block-margin) / 2) 0;
+}
+
+.content-in-columns:is(.especialidades-home) .content-in-columns-buttons {
+    justify-content: center;
+}
