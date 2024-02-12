@@ -26,6 +26,10 @@
     color: var(--color-white);
 }
 
+.header-simple a:is(:hover, :active, :focus) {
+    color: var(--color-light-blue);
+}
+
 .header-simple .featured-menu li:last-child a {
     background-color: var(--color-light-blue);
     border-color: var(--color-light-blue);
