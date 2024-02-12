@@ -1,6 +1,5 @@
 .testimonials h2 {
-    font: var(--font-headline-5);
-    color: var(--color-turquoise);
+    font: var(--font-headline-3);
 }
 
 .testimonials header {
@@ -10,7 +9,7 @@
 .testimonials .testimonial-item {
     background: var(--color-light-grey);
     padding: calc(var(--page-padding) * 2);
-    border-radius: 2rem;
+    border-radius: var(--element-border-radius);
     min-height: 35rem;
     display: flex;
     flex-direction: column;
@@ -22,5 +21,5 @@
 }
 
 .testimonials .testimonial-item cite :is(strong) {
-    color: var(--color-purple);
+    color: var(--color-medium-blue);
 }
