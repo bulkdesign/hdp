@@ -9,6 +9,9 @@
         --color-medium-blue: #106FC6;
         --color-dark-blue: #0D579C;
 
+        --link-color: var(--color-dark-blue);
+        --hover-link-color: var(--color-light-blue);
+
         /* BACKGROUND */
         --light-blue-color: var(--color-light-blue);
         --light-blue-shadow-color: #0073A1;
@@ -45,9 +48,20 @@
             /* DARK BACKGROUND COLORS */
 
         /* PRIMARY BUTTON */
-            /* STYLE */
+            /* DEFAULT STYLE */
             :is(.primary-button, .secondary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button) {
-                border-radius: 1rem;
+                border-radius: calc(var(--element-border-radius) * 2);
+            }
+
+            :is(.primary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button) {
+                color: var(--color-white);
+                background-color: var(--color-medium-blue);
+                border-color: var(--color-medium-blue);
+            }
+
+            :is(.primary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button):is(:active, :hover, :focus) {
+                background-color: var(--color-dark-blue);
+                border-color: var(--color-dark-blue);
             }
 
             /* LIGHT BACKGROUND COLORS */
@@ -66,12 +80,12 @@
             :is([data-color-scheme="dark"], [data-color-scheme="light-blue"], [data-color-scheme="medium-blue"], [data-color-scheme="dark-blue"]) :is(.primary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button) {
                 color: var(--color-white);
                 background-color: var(--color-medium-blue);
-                border-color: var(--color-white);
+                border-color: transparent;
             }
 
             :is([data-color-scheme="dark"], [data-color-scheme="light-blue"], [data-color-scheme="medium-blue"], [data-color-scheme="dark-blue"]) :is(.primary-button, .wp-block-button:not(.is-style-outline) > .wp-element-button):is(:active, :hover, :focus) {
                 background-color: var(--color-dark-blue);
-                border-color: var(--color-white);
+                border-color: transparent;
             }
 
         /* SECONDARY BUTTON */
@@ -108,6 +122,7 @@
         /* MARGINS */
 
         /* MISCELANEOUS */
+        --element-border-radius: 2rem;
 
 }
 
