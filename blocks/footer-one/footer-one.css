@@ -8,7 +8,7 @@
 }
 
 .footer-one-column-container {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr;
 }
 
 .footer-one-column nav a {
