@@ -2,6 +2,10 @@
     max-width: var(--wide-width);
 }
 
+.section-background[data-color-scheme="light"] .title-and-content :is(h1, h2, h3, h4, h5, h6, a, p, span) {
+    color: var(--color-black);
+}
+
 .section-background h2.wp-block-heading {
     font: var(--font-headline-3);
 }
