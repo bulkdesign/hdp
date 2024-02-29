@@ -13,7 +13,7 @@
     background-color: var(--color-white);
 }
 
-.header-simple:not(.menu-open, .scrolled) {
+:is(.home) .header-simple:not(.menu-open, .scrolled) {
     background: transparent;
 }
 
