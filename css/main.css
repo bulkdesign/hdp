@@ -42,6 +42,12 @@
             /* SECONDARY FONT */
 
             /* FONT SIZES */
+            h1 { font: var(--font-headline-2); }
+            h2 { font: var(--font-headline-3); }
+            h3 { font: var(--font-headline-4); }
+            h4 { font: var(--font-headline-5); }
+            h5 { font: var(--font-headline-6); }
+            h6 { font: var(--font-headline-7); }  
 
             /* LIGHT BACKGROUND COLORS */
 
@@ -130,6 +136,10 @@
 .blocks-container {
     margin: 0 auto;
     -webkit-transform: translate3d(0,0,0);
+}
+
+.blocks-container > * {
+    max-width: var(--wide-width);
 }
 
 .blocks-container > .alignfull {
