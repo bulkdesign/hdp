@@ -5,3 +5,7 @@
 .photos-carousel img {
     border-radius: var(--element-border-radius);
 }
+
+.photos-carousel-list-item-image-caption {
+    border-radius: 0 0 var(--element-border-radius) var(--element-border-radius);
+}
