@@ -39,11 +39,11 @@ function child_theme_allowed_blocks() {
         'content-in-columns',
         'content-with-media',
         'cookies-disclaimer',
-        'faq-accordion',
         'footer-one',
         'footer-two',
         'header-simple',
         'latest-news',
+        'links-accordion',
         'logos-carousel',
         'logos-grid',
         'page-hero',
@@ -56,6 +56,7 @@ function child_theme_allowed_blocks() {
         'testimonials',
         'title-and-content',
         'photos-carousel',
+        'timeline',
         'top-bar',
         'search'
     );
