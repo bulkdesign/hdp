@@ -150,3 +150,7 @@
 .home main {
     margin-top: -9rem;
 }
+
+.wp-block-separator {
+    margin: var(--row-gap) auto;
+}
