@@ -40,7 +40,6 @@ function child_theme_allowed_blocks() {
         'content-with-media',
         'cookies-disclaimer',
         'footer-one',
-        'footer-two',
         'header-simple',
         'latest-news',
         'links-accordion',
@@ -50,7 +49,6 @@ function child_theme_allowed_blocks() {
         'page-hero-carousel',
         'posts-archive-with-filter',
         'section-background',
-        'services',
         'single-post-content',
         'template-content',
         'testimonials',
@@ -58,7 +56,6 @@ function child_theme_allowed_blocks() {
         'photos-carousel',
         'timeline',
         'top-bar',
-        'search'
     );
 }
 add_filter( 'theme_allowed_blocks', 'child_theme_allowed_blocks', 10, 0);
@@ -84,6 +81,6 @@ function child_theme_custom_excerpt_size( $length ) {
 add_filter( 'excerpt_length', 'child_theme_custom_excerpt_size', 999 );
 
 // Development mode - delete before completing the project
-function bulk_is_developing(){
-    return true;
-}
+// function bulk_is_developing(){
+//     return true;
+// }
