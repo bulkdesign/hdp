@@ -38,7 +38,7 @@ function child_theme_allowed_blocks() {
         'columns-with-content',
         'content-in-columns',
         'content-with-media',
-        'cookies-disclaimer',
+        'contact-with-map',
         'footer-one',
         'header-simple',
         'latest-news',
