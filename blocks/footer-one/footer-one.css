@@ -1,3 +1,7 @@
+.footer-one {
+    margin-top: var(--block-margin);
+}
+
 .footer-one-main {
     grid-template-columns: auto;
 }
