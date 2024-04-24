@@ -47,3 +47,7 @@
 .content-in-columns:is(.especialidades-home) .content-in-columns-buttons {
     justify-content: center;
 }
+
+.content-in-columns .content-in-columns-details-image img {
+    border-radius: var(--element-border-radius);
+}
