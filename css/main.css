@@ -154,3 +154,15 @@
 .wp-block-separator {
     margin: var(--row-gap) auto;
 }
+
+form {
+    margin-bottom: var(--block-margin);
+}
+
+form label {
+    width: 100%;
+}
+
+form input.wpcf7-form-control.wpcf7-submit.has-spinner {
+    float: right;
+}
