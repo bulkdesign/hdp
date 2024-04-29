@@ -47,7 +47,7 @@ function child_theme_allowed_blocks() {
         'logos-grid',
         'page-hero',
         'page-hero-carousel',
-        'posts-archive-with-filter',
+        'single-select-posts-archive',
         'section-background',
         'single-post-content',
         'template-content',
@@ -79,6 +79,17 @@ function child_theme_custom_excerpt_size( $length ) {
 	return 20;
 }
 add_filter( 'excerpt_length', 'child_theme_custom_excerpt_size', 999 );
+
+/*
+** Include ZIP files upload
+*/
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ( $existing_mimes=array() ) {
+    // add your extension to the mimes array as below
+    $existing_mimes['zip'] = 'application/zip';
+    $existing_mimes['gz'] = 'application/x-gzip';
+    return $existing_mimes;
+}
 
 // Development mode - delete before completing the project
 // function bulk_is_developing(){
