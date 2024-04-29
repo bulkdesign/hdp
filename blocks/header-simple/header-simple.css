@@ -50,18 +50,23 @@ body .header-simple .header-simple-search-form input[type="search"] {
     border-radius: var(--element-border-radius);
 }
 
-.header-simple .featured-menu li:last-child a {
+.header-simple .menu-destaque-container .featured-menu li:last-child a {
     background-color: var(--color-light-blue);
     border-color: var(--color-light-blue);
     border-radius: 2.4rem;
     padding: 0.4rem 1.4rem 0.4rem 2rem;
+    text-decoration: none;
+    transition: 0.3s ease all;
 }
 
-.header-simple .featured-menu li:last-child a:is(:hover, :active, :focus) {
+.header-simple .menu-destaque-container .featured-menu li:last-child a:is(:hover, :active, :focus) {
     background-color: var(--color-dark-blue);
+    transition: 0.3s ease all;
+    text-decoration: none;
+    border-color: var(--color-dark-blue);
 }
 
-.header-simple .featured-menu li:last-child a::after {
+.header-simple .menu-destaque-container .featured-menu li:last-child a::after {
     content: '';
     border: solid var(--color-white);
     border-width: 0 0.2rem 0.2rem 0;
@@ -70,6 +75,13 @@ body .header-simple .header-simple-search-form input[type="search"] {
     margin: 0.1rem 0.5rem;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+    transition: 0.3s ease all;
+}
+
+.header-simple .menu-destaque-container .featured-menu li:last-child a:is(:hover, :active, :focus)::after {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 0.3rem;
 }
 
 @media (min-width: 992px) {
