@@ -1,0 +1,10 @@
+.contact-with-map:is([data-color-scheme="light"], [data-color-scheme="medium"]) .contact-with-map-contact-info {
+    background: var(--color-dark-blue);
+    border-radius: var(--element-border-radius);
+}
+
+@media (min-width: 992px) {
+    .contact-with-map:is([data-color-scheme="light"], [data-color-scheme="medium"]) .contact-with-map-contact-info {
+        border-radius: 0 var(--element-border-radius) var(--element-border-radius) 0;
+    }
+}
