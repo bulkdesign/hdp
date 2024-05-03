@@ -1,4 +1,5 @@
 .content-in-columns:is(.especialidades-home) {
+    padding: 0;
     background-color: var(--color-white);
 }
 
