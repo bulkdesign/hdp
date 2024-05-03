@@ -147,12 +147,25 @@
     -webkit-transform: translate3d(0,0,0);
 }
 
+.blocks-container section:is(:first-of-type) {
+    margin-top: 0;
+}
+
+main .blocks-container:is(:last-child) {
+    margin-bottom: var(--block-margin);
+}
+
 .home main {
     margin-top: -9rem;
 }
 
 .wp-block-separator {
     margin: var(--row-gap) auto;
+}
+
+figure.wp-block-image,
+figure.wp-block-image img {
+    border-radius: var(--element-border-radius);
 }
 
 form {
